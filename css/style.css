@@ -19,7 +19,7 @@
 .header {
   color: white;
   display: block;
-  /* background-color: #16234d; */
+
   background-color: var(--header);
   text-decoration: none;
   font-size: 20px;
@@ -68,7 +68,7 @@ h1 {
 h1 span {
   font-family: Dancing Script, cursive;
   color: var(--red);
-  /* color: #e8234d; */
+
   text-transform: lowercase;
 }
 
@@ -95,10 +95,9 @@ h1 span {
 
 .main-page h4 span {
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   font-weight: normal;
   text-transform: uppercase;
-  color: #fff;
   font-size: 1.5rem;
 }
 .main-page h4 {
@@ -110,7 +109,6 @@ h1 span {
   margin-top: 5px;
   text-align: center;
   font-family: var(--fonts);
-  /* font-family: 'Merriweather', serif; */
 }
 
 /* body ends here */
@@ -141,8 +139,8 @@ h1 span {
     font-size: 1srem;
   }
   .main-page img {
-    max-width: 959px;
-    width: 100vw;
+    /* max-width: 959px; */
+    width: 100%;
     height: auto;
   }
 }
@@ -175,8 +173,8 @@ h1 span {
     font-size: 1rem;
   }
   .main-page img {
-    max-width: 785px;
-    width: 100vw;
+    /* max-width: 785px; */
+    width: 100%;
     height: auto;
   }
 }
