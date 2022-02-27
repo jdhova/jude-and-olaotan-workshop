@@ -6,10 +6,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --white: #fafafa;
+  --header: #16234d;
+  --body: #152a48;
+  --red: #e8234d;
+  --fonts: 'Merriweather', serif;
+}
+
+/* header css starts here  */
 .header {
   color: white;
   display: block;
-  background-color: #16234d;
+  /* background-color: #16234d; */
+  background-color: var(--header);
   text-decoration: none;
   font-size: 20px;
   font-family: serif;
@@ -20,10 +31,16 @@
   position: fixed;
 }
 
+/* header css ends here  */
+
+/* body starts here */
 body {
-  background-color: #152a48;
+  background-color: var(--body);
   height: 100vh;
 }
+/* body ends here */
+
+/* headings starts here  */
 .container-headings {
   position: absolute;
   top: calc(50% - 39px);
@@ -33,7 +50,6 @@ body {
 
   transform: translatex(30%);
   transform: skewY(-9deg) translate(25%);
-  /* background-repeat: no-repeat; */
 }
 
 .main-page img {
@@ -45,22 +61,22 @@ body {
 h1 {
   font-family: Rye, Georgia, serif;
   font-size: 6rem;
-  /* font-size: 6vw; */
   text-transform: uppercase;
   color: #fafafa;
 }
 
 h1 span {
   font-family: Dancing Script, cursive;
-  color: #e8234d;
+  color: var(--red);
+  /* color: #e8234d; */
   text-transform: lowercase;
 }
 
 .main-page h2 {
   font-size: 2rem;
-  font-family: var(--silverAge);
   list-style: 1.2;
-  font-family: 'Merriweather', serif;
+  font-family: var(--fonts);
+  color: var(--red);
   color: #e8234d;
 }
 
@@ -74,7 +90,7 @@ h1 span {
   margin: 0 auto 10px;
   position: relative;
   font-size: 2.2rem;
-  color: whitesmoke;
+  color: var(--white);
 }
 
 .main-page h4 span {
@@ -87,22 +103,52 @@ h1 span {
 }
 .main-page h4 {
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white);
   font-weight: normal;
   text-transform: uppercase;
-  color: #fff;
   font-size: 1.2rem;
   margin-top: 5px;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: var(--fonts);
+  /* font-family: 'Merriweather', serif; */
 }
 
-/* @media only screen and (device-width: 785px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+/* body ends here */
+
+/* tablet responsiveness */
+@media (max-width: 959px) {
+  .container-headings h1,
+  h2,
+  h3,
+  h4 {
+    position: relative;
+    right: 40%;
+  }
   .container-headings h1 {
     font-size: 3rem;
-    color: red;
   }
-} */
+
+  .container-headings h2 {
+    font-size: 1.5rem;
+  }
+  .container-headings h3 {
+    font-size: 1.5rem;
+  }
+  .container-headings h4 {
+    font-size: 1rem;
+  }
+  .container-headings h4 span {
+    font-size: 1srem;
+  }
+  .main-page img {
+    max-width: 959px;
+    width: 100vw;
+    height: auto;
+  }
+}
+/* talet  responsiveness ends here */
+
+/* mobile phone responsiveness starts here */
 
 @media (max-width: 785px) {
   .container-headings h1,
@@ -112,33 +158,27 @@ h1 span {
     position: relative;
     right: 40%;
   }
-  .container-headings h1{
+  .container-headings h1 {
     font-size: 2rem;
   }
 
-  .container-headings h2{
-    font-size: 1.3rem;
-  }
-  .container-headings h3{
-    font-size: 1.3rem;
-  }
-  .container-headings h4{
-    font-size: 0.7rem;
-  }
-  .container-headings h4 span{
-    font-size: 1rem;
-  }
-  
-}
-
-/* @media (max-width: 785px) {
   .container-headings h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
-  /* .container-headings h3 {
-    font-size: 2rem;
+  .container-headings h3 {
+    font-size: 1.3rem;
   }
   .container-headings h4 {
+    font-size: 0.7rem;
+  }
+  .container-headings h4 span {
     font-size: 1rem;
-  } */
-} */
+  }
+  .main-page img {
+    max-width: 785px;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+/* mobile phone responsiveness ends here */
