@@ -139,9 +139,7 @@ h1 span {
     font-size: 1srem;
   }
   .main-page img {
-    /* max-width: 959px; */
-    width: 100%;
-    height: auto;
+    max-width: 125vw;
   }
 }
 /* talet  responsiveness ends here */
@@ -174,8 +172,9 @@ h1 span {
   }
   .main-page img {
     /* max-width: 785px; */
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    max-width: 180vw;
   }
 }
 
