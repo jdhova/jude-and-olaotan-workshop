@@ -43,8 +43,8 @@ body {
 /* headings starts here  */
 .container-headings {
   position: absolute;
-  top: calc(50% - 39px);
-  left: calc(26% - 11px);
+  top: calc(42% - 46px);
+  left: calc(24% - 11px);
   text-align: center;
   transform: translateY(-50%);
 
@@ -142,6 +142,17 @@ h1 span {
     width: 100%;
     height: auto;
   }
+
+  .container-headings {
+    position: absolute;
+    top: calc(42% - 46px);
+    left: calc(24% - 11px);
+    text-align: center;
+    transform: translateY(-50%);
+
+    transform: translatex(30%);
+    transform: skewY(-9deg) translate(25%);
+  }
 }
 /* talet  responsiveness ends here */
 
@@ -174,6 +185,17 @@ h1 span {
   .main-page img {
     width: 100%;
     height: auto;
+  }
+
+  .container-headings {
+    position: absolute;
+    top: calc(42% - 46px);
+    left: calc(24% - 11px);
+    text-align: center;
+    transform: translateY(-50%);
+
+    transform: translatex(30%);
+    transform: skewY(-9deg) translate(25%);
   }
 }
 
