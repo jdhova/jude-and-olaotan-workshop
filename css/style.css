@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  color: white;
+  display: block;
+  background-color: #16234d;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 22px;
+  padding-left: 22px;
+  position: fixed;
+}
+
+body {
+  background-color: #152a48;
+  height: 100vh;
+}
+.container-headings {
+  position: absolute;
+  top: calc(50% - 39px);
+  left: calc(26% - 11px);
+  text-align: center;
+  transform: translateY(-50%);
+
+  transform: translatex(30%);
+  transform: skewY(-9deg) translate(25%);
+  background-repeat: no-repeat;
+}
+
+.main-page img {
+  position: absolute;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+h1 {
+  font-family: Rye, Georgia, serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+h1 span {
+  font-family: Dancing Script, cursive;
+  color: red;
+  text-transform: lowercase;
+}
+
+/* .h1 {
+} */
