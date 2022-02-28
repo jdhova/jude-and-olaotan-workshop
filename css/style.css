@@ -12,7 +12,7 @@
   --header: #16234d;
   --body: #152a48;
   --red: #e8234d;
-  --fonts: 'Merriweather', serif;
+  --fonts: 'Merriweather';
 }
 
 /* header css starts here  */
@@ -193,7 +193,6 @@ h1 span {
     left: calc(24% - 11px);
     text-align: center;
     transform: translateY(-50%);
-
     transform: translatex(30%);
     transform: skewY(-9deg) translate(25%);
   }
